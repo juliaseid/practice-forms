@@ -3,12 +3,23 @@ $(document).ready(function() {
     var firstName = $("input#firstName").val();
     var lastName = $("input#lastName").val();
 
-
     $(".firstName").append(firstName);
     $(".lastName").append(lastName);
 
     $("#letter").show();
+    $("formTwo").show();
 
-    event.preventDefault();
+  event.preventDefault();
+
+  $("#formTwo").submit(function(event) {
+    var yourDream = $("input#yourDream").val();  
+      
+    $(".shoutDream").append(yourDream.toUpperCase());
+
+    $("#dreamScream").show();
+  
+
+  event.preventDefault();
+  });
   });
 });
