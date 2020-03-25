@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Form Letter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Letter Generator</h1>
+      <div>
+        <form id="formOne">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" class="form-control" type="text">
+          </div>
+
+            <div class="form-group">
+              <label for="lasttName">Last Name</label>
+              <input id="lastName" class="form-control" type="text">
+            </div>
+
+          <button type="submit" class="btn">Get a Letter!</button>
+        </form>
+      </div>
+
+      <div id="letter">
+        <h1>Your Letter</h1>
+          <div class="card text-white bg-info md-3" style="max-width: 30rem;">
+            <div class="card-header">A Custom Letter to you!</div>
+            <div class="card-body"></div>
+              <h4 class="card-title">A letter to <span class="firstName"> </span> <span class="lastName"></span>:</h4>
+              <p class="card-text">Dear <span class="firstName"></span>, </p>
+              <p>You may have won $1Million!!!</p>
+
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
